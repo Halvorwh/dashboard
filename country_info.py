@@ -33,12 +33,10 @@ def get_country_info(country_name):
     else:
         print("Country not found.")
 
-while True:
-    country_name = input("Enter a country name (or 'quit' to exit): ")
-    if country_name.lower() == "quit":
-        break
-    get_country_info(country_name)
-
-
-
+if __name__ == "__main__":
+    while True:
+        country_name = input("Enter a country name (or 'quit' to exit): ")
+        if country_name.lower() == "quit":
+            break
+        get_country_info(country_name)  
 

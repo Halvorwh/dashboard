@@ -4,13 +4,15 @@ init(autoreset=True)
 import expenses
 import weather
 import todo
+import country_info
 
 while True:
     print("\n=== Personal Dashboard ===")
     print("1. Expenses")
     print("2. Weather")
     print("3. To-Do List")
-    print("4. Exit")
+    print("4. Country Information")
+    print("5. Exit")
 
     choice = input("Choose an option: ")
 
@@ -21,6 +23,9 @@ while True:
     elif choice == "3":
         todo.run_menu()
     elif choice == "4":
+        country = input("Enter country name: ")
+        country_info.get_country_info(country)  
+    elif choice == "5":
         print("Goodbye!")
         break
     else:
