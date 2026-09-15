@@ -30,5 +30,3 @@ while True:
         break
     else:
         print("Invalid option, try again.")
-
-# Dette er en test av feature branch
